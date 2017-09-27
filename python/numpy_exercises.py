@@ -79,8 +79,12 @@ z = 7 * np.random.random((5,5)) #values in the range of 0 and 7
 zmax, zmin = z.max(), z.min()
 z = (z-zmin)/(zmax-zmin)
 
-
-print(z)
+#create a custom dtype that describes a color as four unsigned bytes (RGBA)
+color = np.dtype([("r", np.ubyte,1),
+									("g", np.ubyte,1),
+									("b", np.ubyte,1),
+									("a", np.ubyte,1)])
+#print(z)
 
 
 
