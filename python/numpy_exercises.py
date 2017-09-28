@@ -86,7 +86,9 @@ color = np.dtype([("r", np.ubyte,1),
 									("a", np.ubyte,1)])
 #print(z)
 
-
+#create 5X3 matrix bya 3X2 matrix (real matrix product)
+z = np.dot(np.ones((5,3)), np.ones((3,2)))
+print(z)
 
 
 
