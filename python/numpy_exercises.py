@@ -88,7 +88,17 @@ color = np.dtype([("r", np.ubyte,1),
 
 #create 5X3 matrix bya 3X2 matrix (real matrix product)
 z = np.dot(np.ones((5,3)), np.ones((3,2)))
-print(z)
+
+#Given a 1D array, negate all elements which are between 3 and 8, in place.
+z = np.arange(11)
+z[(3<z) & (z<8)] *=-1
+
+#what is the output of the following script
+print(sum(range(5),-1))
+from numpy import * #Namespace??#why this causes the following command behave differently
+print(sum(range(5),-1))
+#print(z)
+
 
 
 
