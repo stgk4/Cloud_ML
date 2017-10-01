@@ -94,10 +94,37 @@ z = np.arange(11)
 z[(3<z) & (z<8)] *=-1
 
 #what is the output of the following script
-print(sum(range(5),-1))
+#print(sum(range(5),-1))
 from numpy import * #Namespace??#why this causes the following command behave differently
-print(sum(range(5),-1))
+#print(sum(range(5),-1))
+
+#raise array to the power of its own array
+z = np.arange(5)
 #print(z)
+#print(z**z)
+
+# a>>b equivalent to a rightshift by two times
+#print(z)
+#print(2<<z)
+#print(2<<z>>2)
+
+#comparison operation on a vector level
+z = np.arange(1,5)
+#print(z<-z)
+
+#complex number representaion on a vector
+#print(1j*z)
+
+#divide operator converts vector into real number
+#print(z/1/1)
+
+#invalid operation since after first computation, we cannot compare
+#boolean to a vector values
+#print(z<z>z)
+
+print(z)
+
+
 
 
 
