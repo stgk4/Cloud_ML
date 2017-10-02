@@ -122,6 +122,15 @@ z = np.arange(1,5)
 #boolean to a vector values
 #print(z<z>z)
 
+#result of following
+z = np.array(0)
+z = np.array(0)
+
+#How to round away from zero a float array
+z = np.random.uniform(-10,+10,10)
+#print(np.trunc(z))
+#print(np.copysign(0.5,z))
+#print(np.trunc(z + np.copysign(0.5,z)))
 print(z)
 
 
